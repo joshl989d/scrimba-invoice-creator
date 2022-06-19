@@ -49,47 +49,52 @@ header {
 }
 
 .card-tasks {
-    display: grid;
+    display: flexbox;
+    /* display: grid;
     justify-content: center;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
     margin-top: 40px;
 }
 
 #wash-car {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    margin-right: 20px;
+    /* grid-column: 1 / 2; */
+    /* grid-row: 1; */
+    /* margin-right: 20px; */
 }
 
 #mow-lawn {
-    grid-column: 2 /3;
-    grid-row: 1;
-    margin-right: 20px;
+    /* grid-column: 2 /3; */
+    /* grid-row: 1; */
+    /* margin-right: 20px; */
 }
 
 #pull-weeds {
-    grid-column: 3;
-    grid-row: 1;
+    /* grid-column: 3; */
+    /* grid-row: 1; */
+}
+
+.service-render {
+    display: flex;
 }
 
 .task-text {
-    grid-column: 1 / 2;
-    grid-row: 2;
+    /* grid-column: 1 / 2;
+    grid-row: 2; */
     font-size: 12px;
     font-weight: bold;
 }
 
 .total-text {
-    grid-column: 3;
-    grid-row: 3;
+    /* grid-column: 3;
+    grid-row: 3; */
     font-size: 12px;
     font-weight: bold;
-    text-align: right;
+    justify-self: end;
 }
 
 .total-card {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     border-top: solid 1px white;
     padding-top: 20px;
@@ -97,14 +102,11 @@ header {
 }
 .notes-text {
     font-size: 12px;
-    grid-column: 1 / 2;
-    grid-row: 1;
 }
 
 .total-amount-text {
     font-size: 12px;
-    grid-column: 3;
-    grid-row: 1;
+    justify-self: end; 
 }
 
 button {
@@ -122,6 +124,12 @@ button {
     font-weight: bold;
     margin: 0;
     padding: 0;
+    justify-self: end; 
+}
+
+.send-container {
+    display: flex;
+    justify-content: center;
 }
 
 #send-invoice {
@@ -133,4 +141,5 @@ button {
     border-radius: 7px;
     margin-top: 50px;
     font-size: 16px;
+    justify-self: end;
 }

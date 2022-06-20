@@ -50,46 +50,39 @@ header {
 
 .card-tasks {
     display: flexbox;
-    /* display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr); */
     margin-top: 40px;
 }
 
 #wash-car {
-    /* grid-column: 1 / 2; */
-    /* grid-row: 1; */
-    /* margin-right: 20px; */
+    margin-right: 17.5px;
 }
 
 #mow-lawn {
-    /* grid-column: 2 /3; */
-    /* grid-row: 1; */
-    /* margin-right: 20px; */
+    margin-right: 17.5px;
 }
 
-#pull-weeds {
-    /* grid-column: 3; */
-    /* grid-row: 1; */
-}
+/* #pull-weeds {
+} */
 
 .service-render {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .task-text {
-    /* grid-column: 1 / 2;
-    grid-row: 2; */
     font-size: 12px;
     font-weight: bold;
 }
 
 .total-text {
-    /* grid-column: 3;
-    grid-row: 3; */
     font-size: 12px;
     font-weight: bold;
     justify-self: end;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .total-card {
@@ -98,7 +91,7 @@ header {
     justify-content: center;
     border-top: solid 1px white;
     padding-top: 20px;
-    margin: 20px 39px;
+    margin-top: 20px;
 }
 .notes-text {
     font-size: 12px;
@@ -142,4 +135,8 @@ button {
     margin-top: 50px;
     font-size: 16px;
     justify-self: end;
+}
+
+.content-margin {
+    margin: 0 39px;
 }

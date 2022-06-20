@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background-color: black;
     color: white;
+    font-family: inter;
 }
 
 h1 {
@@ -82,7 +83,25 @@ header {
 
 #services {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#services div {
+    justify-self: end;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.dollar-font {
+    font-weight: 300;
+    color: #918E9B;
 }
 
 .total-card {
@@ -114,8 +133,8 @@ button {
 
 #total-price {
     font-size: 36px;
-    font-weight: bold;
-    margin: 0;
+    font-weight: 600;
+    margin-top: 10px;
     padding: 0;
     justify-self: end; 
 }
@@ -123,6 +142,13 @@ button {
 .send-container {
     display: flex;
     justify-content: center;
+}
+
+.pay-method {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #F5F5F5;
 }
 
 #send-invoice {
@@ -135,6 +161,12 @@ button {
     margin-top: 50px;
     font-size: 16px;
     justify-self: end;
+}
+
+.icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
 .content-margin {

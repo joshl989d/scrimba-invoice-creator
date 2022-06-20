@@ -30,37 +30,37 @@ totalPrice.textContent = `\$${currentTotal}`
 washCar.addEventListener("click", function(){
     if (rendrService[0].requested === false) {
     services.innerHTML += `<span class="service-name">${rendrService[0].name}</span> <div><span class="dollar-font">$</span><span class="amount-0">${rendrService[0].price}</span></div>`
+    currentTotal += 10 
+    totalPrice.textContent = `\$${currentTotal}`
     } 
     else {
         console.log("already pressed")
     }
     rendrService[0].requested = true
-    currentTotal += 10 
-    totalPrice.textContent = `\$${currentTotal}`
 })
 
 mowLawn.addEventListener("click", function(){
     if (rendrService[1].requested === false) {
     services.innerHTML += `<span class="service-name">${rendrService[1].name}</span> <div><span class="dollar-font">$</span><span class="amount-1">${rendrService[1].price}</span></div>`
+    currentTotal += 20 
+    totalPrice.textContent = `\$${currentTotal}`
     }
     else {
         console.log("already pressed")
     }
     rendrService[1].requested = true
-    currentTotal += 20 
-    totalPrice.textContent = `\$${currentTotal}`
 })
 
 pullWeeds.addEventListener("click", function(){
     if (rendrService[2].requested === false) {
     services.innerHTML += `<span class="service-name">${rendrService[2].name}</span> <div><span class="dollar-font">$</span><span id="amount-2">${rendrService[2].price}<span></div>`
+    currentTotal += 30
+    totalPrice.textContent = `\$${currentTotal}`
     }
     else {
         console.log("already clicked")
     }
-    rendrService[2].requested = true
-    currentTotal += 30
-    totalPrice.textContent = `\$${currentTotal}`
+    rendrService[2].requested = true   
 })
 
 sendInvoice.addEventListener("click", function(){
